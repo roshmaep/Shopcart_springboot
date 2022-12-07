@@ -17,5 +17,13 @@ export class UserregComponent {
   {
     let data:any={"name":this.name,"address":this.address,"email":this.email,"phone":this.phone,"password":this.password,"cpassword":this.cpassword}
     console.log(data)
+    if (this.password==this.cpassword) {
+
+      alert("successfully registered")
+  } else {
+  
+      alert("check password and confirm password")
+  
+    }
   }
 }
