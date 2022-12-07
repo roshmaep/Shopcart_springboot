@@ -13,4 +13,7 @@ export class ApiService {
   fetchproduct=()=>{
     return this.http.get("")
   }
+  fetchsearch=(dataToSend:any)=>{
+    return this.http.post("",dataToSend)
+  }
 }
