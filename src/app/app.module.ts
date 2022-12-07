@@ -14,6 +14,8 @@ import { ViewproductComponent } from './viewproduct/viewproduct.component';
 import { SearchComponent } from './search/search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbaradminComponent } from './navbaradmin/navbaradmin.component';
+import { CardviewComponent } from './cardview/cardview.component';
+import { NavbaruserComponent } from './navbaruser/navbaruser.component';
 const myRoute:Routes=[{
   path:"",
   component:AdminComponent
@@ -38,6 +40,9 @@ const myRoute:Routes=[{
 },{
   path:"nav2",
   component:NavbaradminComponent
+},{
+  path:"card",
+  component:CardviewComponent
 }]
 @NgModule({
   declarations: [
@@ -49,7 +54,9 @@ const myRoute:Routes=[{
     ViewproductComponent,
     SearchComponent,
     NavbarComponent,
-    NavbaradminComponent
+    NavbaradminComponent,
+    CardviewComponent,
+    NavbaruserComponent
   ],
   imports: [
     BrowserModule,

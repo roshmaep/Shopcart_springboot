@@ -21,7 +21,7 @@ export class AddproductComponent {
   this.api.addproduct(data).subscribe(
     (response:any)=>{console.log(response)
       if(response.status =="success"){
-        alert("course added successfully")
+        alert("product added successfully")
        
         this.productname=""
         this.img=""
