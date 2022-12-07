@@ -10,4 +10,7 @@ export class ApiService {
   addproduct=(dataToSend:any)=>{
     return this.http.post("",dataToSend)
   }
+  fetchproduct=()=>{
+    return this.http.get("")
+  }
 }
