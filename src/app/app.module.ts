@@ -16,6 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NavbaradminComponent } from './navbaradmin/navbaradmin.component';
 import { CardviewComponent } from './cardview/cardview.component';
 import { NavbaruserComponent } from './navbaruser/navbaruser.component';
+import { ViewprofileComponent } from './viewprofile/viewprofile.component';
 const myRoute:Routes=[{
   path:"",
   component:AdminComponent
@@ -43,6 +44,11 @@ const myRoute:Routes=[{
 },{
   path:"card",
   component:CardviewComponent
+},
+{
+  path:"viewprofile",
+  component:ViewprofileComponent
+  
 }]
 @NgModule({
   declarations: [
@@ -56,7 +62,8 @@ const myRoute:Routes=[{
     NavbarComponent,
     NavbaradminComponent,
     CardviewComponent,
-    NavbaruserComponent
+    NavbaruserComponent,
+    ViewprofileComponent
   ],
   imports: [
     BrowserModule,

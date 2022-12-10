@@ -16,5 +16,14 @@ export class ApiService {
   fetchsearch=(dataToSend:any)=>{
     return this.http.post("http://localhost:8080/search",dataToSend)
   }
+  userreg=(datatosend:any)=>{
+    return this.http.post("http://localhost:8080/userregistration",datatosend)
+  }
+  userLogin=(datatosend:any)=>{
+    return this.http.post("http://localhost:8080/userlogin",datatosend)
+  }
+  getProfileDetails=(datatosend:any)=>{
+    return this.http.post("http://localhost:8080/getUserById",datatosend)
+  }
  
 }

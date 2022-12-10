@@ -8,7 +8,8 @@ import { ApiService } from '../api.service';
 })
 export class CardviewComponent {
   constructor(private api:ApiService){
-  api.fetchproduct().subscribe((response)=>{this.products=response;})}
+  api.fetchproduct().subscribe((response)=>
+  {this.fetchsearch=response;})}
   productname=""
   fetchsearch:any =[]
   readValue=()=>
